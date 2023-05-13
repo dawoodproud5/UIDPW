@@ -1,0 +1,741 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;300;400;500;600;700;800&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap"); */
+
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;1,400&display=swap");
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfMZs.woff)
+    format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuI6fMZs.woff)
+    format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuGKYMZs.woff)
+    format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuFuYMZs.woff)
+    format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuDyYMZs.woff)
+    format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuBWYMZs.woff)
+    format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+
+@font-face {
+  font-family: "HelveticaNeueRoman";
+  src: url("/src/pages/Fonts/HelveticaNeueRoman.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "InterThin";
+  src: url("/src/pages/Fonts/cyrillic-100-normal.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+  transition-duration: 1000ms;
+  transition-delay: 1000ms;
+}
+
+body {
+  background: #121521 !important;
+  scroll-behavior: smooth;
+  transition-duration: 1000ms;
+  transition-delay: 1000ms;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-shadow: border-box;
+  /* background: #030713 !important; */
+}
+
+.styles-module_whatsappButton__tVits {
+  background-color: #25d366 !important;
+  width: 54px !important;
+  height: 54px !important;
+}
+
+.styles-module_chatBody__VBxQH {
+  padding: 10px !important;
+}
+
+/* HiringRecruttie */
+.jwieGb {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 32px 0px;
+  font-size: 12px;
+  line-height: normal;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgb(255, 255, 255);
+}
+
+/* Created with https://www.css-gradient.com */
+/* .bg_card {
+  
+  background: #202144;
+  background: -webkit-radial-gradient(right, #202144, #2d1933);
+  background: -moz-radial-gradient(right, #202144, #2d1933);
+  background: radial-gradient(to left, #202144, #2d1933);
+} */
+
+/* bg for the trust pilot review section  */
+/* background: linear-gradient(114.94deg, #ff4273 9.66%, #ff8c5a 87.27%); */
+/* .bg-testing {
+ 
+  background: #302e4c; 
+  background: -webkit-linear-gradient(
+    to right,
+    #202144,
+    #302e4c
+  ); 
+  background: linear-gradient(
+    to right,
+    #202144,
+    #302e4c
+  ); 
+} */
+/* background:'linear- gradient(114.94deg, #ff4273 9.66 %, #ff8c5a 87.27 %) */
+
+.text-shadow-light {
+  text-shadow: 0 0 15px hsla(0, 0%, 100%, 0.65);
+}
+
+.dropdown-menu {
+  display: none;
+  color: aliceblue;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  color: aliceblue;
+}
+
+li:hover .dropdown {
+  display: block;
+}
+
+/* restimonial card font */
+
+.text-testimonial-card-author-sm {
+  font-size: 19px;
+  line-height: 22px;
+}
+.text-testimonial-card-author-md {
+  font-size: 19px;
+  line-height: 22px;
+}
+.text-testimonial-card-author-lg {
+  font-size: 19px;
+  line-height: 22px;
+}
+
+.text-testimonial-card-stat-lg {
+  font-size: 32px;
+  line-height: 39px;
+}
+.text-testimonial-card-stat-md {
+  font-size: 30px;
+  line-height: 36px;
+}
+.text-testimonial-card-stat-sm {
+  font-size: 28px;
+  line-height: 34px;
+}
+
+.text-testimonial-card-quote-lg {
+  font-size: 20px;
+  line-height: 24px;
+}
+.text-testimonial-card-quote-md {
+  font-size: 18px;
+  line-height: 21px;
+}
+.text-testimonial-card-quote-sm {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.parent1 {
+  display: none;
+  position: absolute;
+  width: 180px;
+  top: 32px;
+  left: -5px;
+  background-color: #05050c;
+  background-image: linear-gradient(0deg, #05050c 0%, #302e4c 100%);
+
+  border: 1px solid gray;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.main:hover .item {
+  display: flex;
+  flex-direction: column;
+}
+
+.glow_text:hover {
+  text-shadow: 0 0 15px white;
+  transition: ease-in-out;
+  transform: scale(1.02);
+
+  /* box-shadow: 0 0 20px #e2d5e0; */
+}
+
+/* heroswction styling */
+.text-hero-main-lg {
+  font-size: 60px;
+  line-height: 60px;
+}
+.text-hero-main-md {
+  font-size: 45px;
+  line-height: 50px;
+}
+
+.text-hero-main-sm {
+  font-size: 32px;
+  line-height: 35px;
+}
+
+.text-hero-main-lg_2 {
+  font-size: 60px;
+  line-height: 60px;
+}
+.text-hero-main-md_2 {
+  font-size: 45px;
+  line-height: 50px;
+}
+
+.text-hero-main-sm_2 {
+  font-size: 32px;
+  line-height: 35px;
+}
+
+.text-hero-sub-lg {
+  font-size: 22px;
+  line-height: 27px;
+}
+
+.text-hero-sub-md {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.text-hero-sub-sm {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/* .filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+} */
+
+/* 
+.bg_BYT {
+  background: radial-gradient(#202245, #121522);
+} */
+
+/* background: radial-gradient(#202245, #121522); */
+/* background: #1A2948;
+background: -webkit-radial-gradient(bottom, #1A2948, #030713);
+background: -moz-radial-gradient(bottom, #1A2948, #030713);
+background: radial-gradient(to top, #1A2948, #030713); */
+
+/* portfolio page */
+
+.active {
+  background-color: #0203060f;
+}
+
+/* call to action  */
+.bg_SCY {
+  background: radial-gradient(
+    ellipse at center,
+    #203666 5%,
+    #1d345d 20%,
+    #121521 80%
+  );
+  background-size: 100% 100%;
+  /* background-position: enter !important; */
+  background-repeat: no-repeat;
+}
+
+.bg_blur_red {
+  /* background: radial-gradient(
+    circle at bottom left,
+    #8d1951 5%,
+    #8d1951 5%,
+    #121521 20%
+  );
+  background-size: 100% 100%;
+  background-position: bottom 2vw left 30vh;
+  background-repeat: no-repeat; */
+  /* background-image: url(/public/Images/blob_bg_2.png); */
+  /* background-image: url("your-overlay-image.png"); */
+
+  background: radial-gradient(
+    ellipse at center,
+    #8d1951 5%,
+    #8d1951 15%,
+    #121521 40%
+  );
+  background-size: 70% 90%;
+  background-position: bottom -130px left -40px !important;
+  background-repeat: no-repeat;
+}
+
+/* drop dowwn csss */
+.span_dropdown {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  transition: text-shadow 0.5s ease;
+  transition-delay: 1.9s !important;
+}
+
+.span_dropdown:hover {
+  text-shadow: 1px 1px 2px rgba(241, 235, 235, 0.3);
+  font-weight: bold !important;
+  color: white !important;
+}
+
+.bg-gray-gradient {
+  background-image: linear-gradient(163.03deg, #414660 10.07%, #292e48 57.49%);
+}
+
+.bg_servicecard_main {
+  background: radial-gradient(
+    ellipse at center,
+    #203666 5%,
+    #1d345d 10%,
+    #121521 50%
+  );
+  background-size: 80% 100%;
+  background-position: bottom -20px right -20px !important;
+  background-repeat: no-repeat;
+}
+
+/* background: radial-gradient(#202245, #121522); */
+/* Created with https://www.css-gradient.com */
+/* .bg_slider {
+  background: #161e2c;
+  background: -webkit-radial-gradient(top left, #161e2c, #1a2961);
+  background: -moz-radial-gradient(top left, #161e2c, #1a2961);
+  background: radial-gradient(to bottom right, #161e2c, #1a2961);
+} */
+
+.mySwiper {
+  width: 100% !important;
+  height: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 2rem !important;
+}
+
+.swiper-slide {
+  text-align: center !important;
+  /* Center slide text vertically */
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  transition: transform 2s ease !important;
+}
+
+.mySwiperPagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.mySwiperPagination {
+  color: #030713 !important;
+}
+
+/* .swiper-button-prev::after {
+} */
+
+.MyRatingSlider {
+  width: 100% !important;
+  height: 100% !important;
+  display: flex !important;
+}
+
+/* .ratingSlider-Slide {
+} */
+
+.sliderItem {
+  background: rgb(131, 42, 102);
+  background: linear-gradient(
+    0deg,
+    rgba(27, 60, 133, 1) 50%,
+    rgba(128, 43, 98, 1) 100%
+  );
+}
+
+/* to hide scrollbar */
+.custom-scroll::-webkit-scrollbar {
+  width: 6px;
+  height: auto;
+  padding-left: 4px;
+  /* display: block;   */
+  background: #0000004d;
+}
+
+/* Track */
+.custom-scroll::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey; */
+  border-radius: 20px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #949494;
+}
+
+.MuiRating-icon {
+  color: #e7711b;
+}
+
+/* =======> drawer styles */
+.drawer {
+  width: 100% !important;
+  height: 100% !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  background-color: #121521 !important;
+  font-family: "Inter" !important;
+}
+@media screen and (max-width: 700px) {
+  .drawer {
+    width: 100% !important;
+    height: 100% !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .drawer {
+    width: 100% !important;
+    height: 100% !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+  }
+}
+
+.selected {
+  margin-bottom: 150px;
+}
+
+.bg_testimonials {
+  background-image: linear-gradient(
+    344.11deg,
+    rgba(128, 49, 200, 0.5) 14.71%,
+    rgba(255, 67, 151, 0.5) 96.55%
+  );
+}
+
+/* .border-gradient-to-br {
+  border-image: linear-gradient(to bottom right, var(--tw-gradient-stops)) 1;
+} */
+/* .border-gradient-to-br {
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom right, purple, pink, red) 1;
+} */
+
+/* tabs styling */
+.tab {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+}
+
+.tab-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tab-list button {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.tab-list button:hover,
+.tab-list button.active {
+  border-bottom: 2px solid #0070f3;
+  color: #0070f3;
+}
+
+.tab-content {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.tabNotActive {
+  background: #05050c !important;
+}
+
+/* .tab-list button:focus,
+.tab-list button:not(.active):hover {
+  border-bottom-color: transparent;
+  color: #555;
+} */
+
+/* Application form styling */
+
+/* label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+} */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  min-width: 300px;
+}
+
+input[type="text1"],
+textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  min-width: 100%;
+  min-height: 140px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* input[type="file"] {
+  margin-top: 20px;
+  padding: 20px;
+} */
+
+button[type="submit"] {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0066b3;
+}
+
+/* button[type="remove"] {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button[type="remove"]:hover {
+  background-color: #999;
+} */
+
+.abdal_color {
+  background-image: linear-gradient(
+    135deg,
+    #7280ff 20%,
+    #f56772 80%
+      /* #00d989 37.67%,
+    #00bce1 49.91%,
+    #a139ff 64.37%,
+    #ff5558 73.27%,
+    #ff7500 81.62% */
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.abdal_color1 {
+  background-image: linear-gradient(
+    135deg,
+    #f56772 20%,
+    #7280ff 80%
+      /* #00d989 37.67%,
+    #00bce1 49.91%,
+    #a139ff 64.37%,
+    #ff5558 73.27%,
+    #ff7500 81.62% */
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.abdal_color2 {
+  background-image: linear-gradient(
+    135deg,
+    /*   
+    #F56772 20%,
+    #7280FF 80% */ #00d989 37.67%,
+    #00bce1 49.91%,
+    #a139ff 64.37%,
+    #ff5558 73.27%,
+    #ff7500 81.62%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.MuiSelect-multiple {
+  color: #0077cc !important;
+  /* background-color: #030713 !important; */
+  background-size: cover;
+}
+
+.glowbg1t {
+  /* background-color: #f918801a;  */
+  /* set the initial background color */
+  border-radius: 0.6rem; /* set the border radius to create a rounded shape */
+  transition: box-shadow 0.2s ease-in-out; /* add a smooth transition effect */
+}
+
+.glowbg1t:hover {
+  box-shadow: 0 0 5px 5px #f918801a;
+}
+
+/* pop coponent styling */
+
+.glowbg2t {
+  background-color: #00ba7c1a; /* set the initial background color */
+  border-radius: 0.6rem; /* set the border radius to create a rounded shape */
+  transition: box-shadow 0.2s ease-in-out; /* add a smooth transition effect */
+}
+
+.glowbg2t:hover {
+  box-shadow: 0 0 5px 5px #00ba7c1a;
+}
+
+.glowbg3t {
+  background-color: #1d9bf01a; /* set the initial background color */
+  border-radius: 0.6rem; /* set the border radius to create a rounded shape */
+  transition: box-shadow 0.2s ease-in-out; /* add a smooth transition effect */
+}
+
+.glowbg3t:hover {
+  box-shadow: 0 0 5px 5px #1d9bf01a;
+}
